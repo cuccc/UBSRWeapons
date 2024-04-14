@@ -1,0 +1,7 @@
+name: UBSRWeapons
+version: '1.0-SNAPSHOT'
+main: me.cucc.ubsrweapons.UBSRWeapons
+api-version: '1.20'
+commands:
+  getweapon:
+    description: Ad

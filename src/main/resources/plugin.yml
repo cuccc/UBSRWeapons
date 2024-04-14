@@ -2,3 +2,6 @@ name: UBSRWeapons
 version: '${project.version}'
 main: me.cucc.ubsrweapons.UBSRWeapons
 api-version: '1.20'
+commands:
+  getweapon:
+    description: Ad
