@@ -37,7 +37,9 @@ public class ConfigurationManager {
             }
             new PrintWriter(new FileWriter(pluginFolder + "\\guns\\gun_example.json")).write(jsonObject.toString());
         } catch (IOException e) {
-
+            for(StackTraceElement el : e.getStackTrace()){
+                UBSRWeapons.logger.severe(el.toString());
+            }
         }
     }
 }
