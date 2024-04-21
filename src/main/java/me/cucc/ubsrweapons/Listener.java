@@ -1,6 +1,6 @@
 package me.cucc.ubsrweapons;
 
-import me.cucc.ubsrweapons.impl.Weapon;
+import me.cucc.ubsrweapons.impl.Gun;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerInteractEvent;
@@ -14,8 +14,8 @@ public class Listener implements org.bukkit.event.Listener {
 
         Player weaponHandler = event.getPlayer();
         ItemStack itemInHand = weaponHandler.getInventory().getItemInMainHand();
-        if (Weapon.isWeapon(itemInHand)) {
-            Weapon.getWeapon(itemInHand).shoot(itemInHand, event.getPlayer());
+        if (Gun.isWeapon(itemInHand)) {
+            Gun.getWeapon(itemInHand).shoot(itemInHand, event.getPlayer());
         }
     }
 }
